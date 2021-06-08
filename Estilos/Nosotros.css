@@ -1,40 +1,29 @@
-/* <!--Menu--> */
 body {
   margin: 0;
   padding: 0;
   background: white;
 }
-.navbar ul {
-  list-style: none;
-  background: rgb(245, 183, 193);
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.navbar li {
-  display: inline-block;
-}
-.navbar a {
+/* <!--Menu--> */
+.list {
   text-decoration: none;
   color: white;
-  width: 100px;
   display: block;
-  padding: 25px 20px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
 }
-.navbar a:hover {
+.menu {
+  background: rgb(245, 183, 193);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.menu a:hover {
   background: rgb(228, 156, 200);
 }
-.ul {
-  color: pink;
+.color {
+  background-color: rgb(245, 183, 193);
 }
 .logo {
-  margin: 0px;
-  width: 90px;
-  padding: 10px;
+  width: 120px;
+  height: 70px;
 }
 /* <!--Main--> */
 .p {
@@ -43,23 +32,27 @@ body {
   text-decoration: underline grey;
   font-size: 30px;
   font-style: italic;
+  font-weight: bold;
 }
-.main {
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.container {
+  margin-bottom: 10%;
+  margin-top: 3%;
 }
-.main article {
-  background-color: rgb(240, 199, 206);
-  padding: 100px;
-  height: 100px;
-  width: 200px;
-  text-align: left;
+.imgnosotros {
+  height: 300px;
+  width: 400px;
+  padding: 10px;
+  border-top: 20%;
+  max-width: 100%;
 }
-.main aside {
-  background-color: white;
+.diseños {
+  background-color: rgb(248, 220, 225);
+  border-radius: 10px;
+  justify-content: center;
+  padding: 70px;
+  font-size: 20px;
 }
+
 /* <!--Footer--> */
 .footer {
   width: 100%;

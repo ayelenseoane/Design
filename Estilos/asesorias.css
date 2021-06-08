@@ -1,85 +1,73 @@
-/* <!--Menu--> */
 body {
   margin: 0;
   padding: 0;
   background: white;
 }
-.navbar ul {
-  list-style: none;
-  background: rgb(245, 183, 193);
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.navbar li {
-  display: inline-block;
-}
-.navbar a {
+/* <!--Menu--> */
+.list {
   text-decoration: none;
   color: white;
-  width: 100px;
   display: block;
-  padding: 25px 20px;
-  font-size: 15px;
-  text-transform: uppercase;
+}
+.menu {
+  background: rgb(245, 183, 193);
+  font-size: 20px;
   font-weight: bold;
-  text-align: center;
-}
-.navbar a:hover {
-  background: rgb(228, 156, 200);
-}
-.logo {
-  margin: 0px;
-  width: 90px;
   padding: 10px;
 }
+.menu a:hover {
+  background: rgb(228, 156, 200);
+}
+.color {
+  background-color: rgb(245, 183, 193);
+}
+.logo {
+  width: 120px;
+  height: 70px;
+}
 /* <!--Main--> */
+/* <!--Tabla--> */
+
+.table {
+  background-color: rgb(248, 220, 225);
+  margin-top: 5%;
+  padding: 10%;
+}
 .h1 {
   color: gray;
   text-decoration: underline grey;
+  text-align: center;
   font-size: 30px;
   font-weight: bold;
   font-style: italic;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: auto 100%;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 1em;
-  row-gap: 2em;
-  grid-template-areas:
-    "item1 item2 item3"
-    "item4 item4 item4";
-}
-.item1 {
-  background-color: rgb(243, 201, 207);
-  border-radius: 10px;
-  padding: 10px;
-}
-.item2 {
-  background-color: rgb(243, 201, 207);
-  border-radius: 10px;
-  padding: 60px;
-}
-.item3 {
-  padding: 10px;
+/* <!--Texto e imagen--> */
+.container {
+  margin-bottom: 8%;
+  margin-top: 8%;
 }
 .imgbaño {
   height: 400px;
-  width: 400px;
-}
-/* <!--Footer--> */
-.item4 {
-  background-color: rgb(204, 199, 199);
-  height: 30px;
-  grid-column: 1/4;
+  width: 500px;
   padding: 10px;
-  color: grey;
-  align-items: center;
+  border-top: 20%;
+  max-width: 100%;
+}
+.diseños {
+  background-color: rgb(248, 220, 225);
+  border-radius: 10px;
+  justify-content: center;
+  padding: 70px;
+  font-size: 20px;
+}
+
+/* <!--Footer--> */
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(204, 199, 199);
   text-align: right;
+  background-size: cover;
 }
 .img {
   width: 20px;

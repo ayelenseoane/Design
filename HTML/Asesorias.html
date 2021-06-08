@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <title>Asesorias</title>
     <link rel="stylesheet" href="../Estilos/asesorias.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,83 +26,89 @@
   <body>
     <!--Menu-->
     <header>
-      <nav>
-        <a href="../index.html" target="_blank">
-          <img src="../Img/Logo2.png" class="logo"
-        /></a>
+      <header>
+        <ul class="nav justify-content-center color">
+          <div><img src="../Img/Logo2.png" class="logo" /></div>
+          <li class="nav-item menu">
+            <a class="nav-link active list" aria-current="page" href="../index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item menu">
+            <a class="nav-link list" href="./Asesorias.html">Asesorias</a>
+          </li>
+          <li class="nav-item menu">
+            <a class="nav-link list" href="./Proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item menu">
+            <a class="nav-link list" href="./Nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item menu">
+            <a class="nav-link list" href="./Contacto.html">Contacto</a>
+          </li>
+        </ul>
+  
         <hr />
-
-        <div class="navbar">
-          <ul class="ul">
-            <li><a href="../index.html" target="_blank">Inicio</a></li>
-            <li>
-              <a href="../HTML/Asesorias.html" target="_blank">Asesorias</a>
-            </li>
-            <li>
-              <a href="../HTML/Proyectos.html" target="_blank">Proyectos</a>
-            </li>
-            <li>
-              <a href="../HTML/Nosotros.html" target="_blank">Nosotros</a>
-            </li>
-            <li>
-              <a href="../HTML/Contacto.html" target="_blank">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <hr />
-    </header>
+      </header>
 
     <!--Main-->
-    <main class="grid">
-      <div class="item1">
-        <table class="table" border="2">
-          <caption>
-            <div>
-              <h1 class="h1"><i>Asesorias presenciales y online</i></h1>
-            </div>
-          </caption>
-          <tr>
-            <th>Tipo de asesoria</th>
-            <th>Incluye</th>
-            <th>Valor</th>
-          </tr>
-          <tr>
-            <td>1 ambiente</td>
-            <td>Plano de distribución, archivo con imagenes y diseño 3D</td>
-            <td>4.ooo $</td>
-          </tr>
-          <tr>
-            <td>2 ambientes</td>
-            <td>Plano de distribución, archivo con imagenes y diseño 3D</td>
-            <td>8.ooo $</td>
-          </tr>
-          <tr>
-            <td>3 ambientes</td>
-            <td>Plano de distribución, archivo con imagenes y diseño 3D</td>
-            <td>12.ooo $</td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="item2">
-        Elegís la asesoría que quieras y completa el formulario con tus datos de
+    <!--Tabla-->
+      <h1 class="h1"><i>Asesorias presenciales y online</i></h1>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Tipo de asesoria</th>
+          <th scope="col">Incluye</th>
+          <th scope="col">Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>1 Ambiente</td>
+          <td>Plano de distribución, archivo con imagenes y diseño 3D</td>
+          <td>4.000$</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>2 Ambientes</td>
+          <td>Plano de distribución, archivo con imagenes y diseño 3D</td>
+          <td>8.000$</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>3 Ambientes</td>
+          <td>Plano de distribución, archivo con imagenes y diseño 3D</td>
+          <td>12.000$</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Imagen y parrafo-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img class="imgbaño" src="../Img/baño 1.jpg" />
+        </div>
+        <div class="col-md-5 diseños">
+          <p>
+            Elegís la asesoría que quieras y completa el formulario con tus datos de
         contacto. Dentro de las siguientes 24 horas hábiles vas a recibir un
         mail con las instrucciones a seguir y un contacto de whatsapp para que
         puedas enviarnos las fotos, la información que creas necesaria y
         coordinar el día y horario de la reunión.
+          </p>
+        </div>
       </div>
-      <div class="item3">
-        <img class="imgbaño" src="../Img/baño 1.jpg" />
-      </div>
-
+    </div>
+  </main>
+    
       <!--Footer-->
-
-      <div class="item4">
+      <footer class="footer">
         <img class="img" src="../Img/facebook.png" />
         <img class="img" src="../Img/instagram.png" />
         <img class="img" src="../Img/placeholder-filled-point.png" />
-      </div>
-    </main>
+      </footer>
   </body>
 </html>

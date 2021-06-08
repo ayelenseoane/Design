@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <title>Inicio</title>
     <link rel="stylesheet" href="./Estilos/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -13,74 +24,82 @@
     />
   </head>
   <body>
+    <!--Menu-->
     <header>
-      <nav>
-        <img src="./Img/Logo2.png" class="logo" />
-        <hr />
-        <div class="navbar">
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li>
-              <a href="./HTML/Asesorias.html" target="_blank">Asesorias</a>
-            </li>
-            <li>
-              <a href="./HTML/Proyectos.html" target="_blank">Proyectos</a>
-            </li>
-            <li><a href="./HTML/Nosotros.html" target="_blank">Nosotros</a></li>
-            <li><a href="./HTML/Contacto.html" target="_blank">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
+      <ul class="nav justify-content-center color">
+        <div><img src="./Img/Logo2.png" class="logo" /></div>
+        <li class="nav-item menu">
+          <a class="nav-link active list" aria-current="page" href="#"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link list" href="./HTML/Asesorias.html">Asesorias</a>
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link list" href="./HTML/Proyectos.html">Proyectos</a>
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link list" href="./HTML/Nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item menu">
+          <a class="nav-link list" href="./HTML/Contacto.html">Contacto</a>
+        </li>
+      </ul>
+
       <hr />
     </header>
+    <!--Banner-->
     <main>
+      <!--Banner-->
       <section>
         <article>
-          <img class="portada" src="./Img/Portada.jpg" />
+          <img src="./Img/Portada.jpg" class="img-fluid mb-4" alt="portada" />
         </article>
       </section>
       <br />
-      <!--en esta seccion va un titulo con una imagen y una descripcion-->
+
+      <!--Titulo, imagen, parrafo-->
 
       <h1 class="h2">Diseños</h1>
       <br />
 
       <br />
-      <div class="diseños">
-        <article>
-          <img class="imghouses" src="./Img/Houses.jpg" />
-        </article>
-        <aside>
-          Nuestros diseños incluyen: Plano de distribución, archivo con imágenes
-          y links de referencia, moodboard esquemático y diseño 3D.
-        </aside>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-md-8">
+            <img class="imghouses" src="./Img/Houses.jpg" />
+          </div>
+          <div class="col-sm-2 col-md-4 diseños">
+            <p>
+              Nuestros diseños incluyen: Plano de distribución, archivo con
+              imágenes y links de referencia, moodboard esquemático y diseño 3D.
+            </p>
+          </div>
+        </div>
       </div>
-      <br />
-
-      <br />
-      <br />
+      
 
       <!--aca van tres imagenes acompañadas por un titulo-->
       <h1 class="h1">
         <a href="./HTML/Proyectos.html" class="link">Trabajos</a>
       </h1>
-      <br />
-      <div class="trabajos">
-        <article>
-          <img class="imagen" src="./Img/Dormitorio 1.jpg" />
-        </article>
-        <article>
-          <img class="imagen" src="./Img/baño 3.jpg" />
-        </article>
-        <article>
-          <img class="imagen" src="./Img/Cocina 3.jpg" />
-        </article>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-md-4">
+            <img class="imagen" src="./Img/Dormitorio 1.jpg" />
+          </div>
+          <div class="col-sm-2 col-md-4">
+            <img class="imagen" src="./Img/baño 3.jpg" />
+          </div><div class="col-sm-2 col-md-4">
+            <img class="imagen" src="./Img/Cocina 3.jpg" />
+          </div>
+          </div>
+        </div>
       </div>
     </main>
     <!--Footer-->
-    <br />
-    <br />
-    <br />
+
     <footer class="footer">
       <img class="img" src="./Img/facebook.png" />
       <img class="img" src="./Img/instagram.png" />
