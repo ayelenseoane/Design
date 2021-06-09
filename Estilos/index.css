@@ -79,6 +79,11 @@ body {
   height: 400px;
   max-width: 100%;
 }
+.imagen:hover {
+  transition: 1s;
+  size: 3rem;
+  transform: scale(1, 2);
+}
 /* <!--Footer--> */
 .footer {
   width: 100%;
