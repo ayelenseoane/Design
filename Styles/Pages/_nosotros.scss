@@ -1,0 +1,35 @@
+/* <!--Main--> */
+.p {
+  text-align: center;
+  color: grey;
+  text-decoration: underline grey;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 3%;
+}
+.nos {
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+.imgnosotros {
+  padding: 10px;
+  border-top: 20%;
+  max-width: 100%;
+  @include sizes(400px, 300px);
+}
+.Nosotros {
+  background-image: linear-gradient(to left, white, rgb(248, 203, 210));
+  border-radius: 10px;
+  justify-content: center;
+  padding: 70px;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .imgnosotros {
+    width: 300px;
+    height: 300px;
+    margin-top: 4%;
+    margin-left: 2%;
+  }
+}

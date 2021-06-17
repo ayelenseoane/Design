@@ -1,0 +1,24 @@
+/* <!--Main--> */
+
+.contact {
+  text-align: left;
+  margin-bottom: 10%;
+  margin-top: 8%;
+}
+
+.contacto {
+  background-image: linear-gradient(rgb(223, 217, 217), rgb(248, 203, 210));
+  border-radius: 10px;
+  align-items: center;
+  padding: 70px;
+  font-size: 20px;
+  margin-left: 10%;
+  @include sizes(400px, 300px);
+}
+
+@media (max-width: 600px) {
+  .contacto {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}

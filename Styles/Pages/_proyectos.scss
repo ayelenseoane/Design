@@ -1,0 +1,31 @@
+/* <!--Main--> */
+.titulo {
+  text-align: center;
+  border-image: 5px;
+  color: grey;
+  text-decoration: underline grey;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.imagenes {
+  border-radius: 20%;
+  border-color: grey;
+  border-style: solid;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  @include sizes(400px, 400px);
+}
+
+@media (max-width: 600px) {
+  .imagenes {
+    width: 200px;
+    height: 200px;
+    margin-top: 4%;
+    margin-left: 30%;
+  }
+}

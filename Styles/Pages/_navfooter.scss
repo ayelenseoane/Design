@@ -1,0 +1,41 @@
+$color-footer: rgb(204, 199, 199);
+$color-menu: rgb(245, 183, 193);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+/* <!--Nav--> */
+.menu {
+  background-color: $color-menu;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+}
+.menu a:hover {
+  background: rgb(228, 156, 200);
+}
+.logo {
+  width: 100px;
+  height: 60px;
+}
+/* <!--Footer--> */
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: $color-footer;
+  color: grey;
+  text-align: center;
+  background-size: cover;
+  margin-top: 5%;
+}
+.img {
+  width: 20px;
+  margin: 10px;
+}
+.img a:hover {
+  color: pink;
+}

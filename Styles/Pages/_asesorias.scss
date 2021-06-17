@@ -1,0 +1,33 @@
+/* <!--Main--> */
+/* <!--Tabla--> */
+
+.table {
+  background-color: rgb(248, 220, 225);
+  margin-top: 5%;
+  padding: 10%;
+}
+.titulo {
+  text-decoration: underline grey;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  @include color-and-size(grey, 30px);
+}
+/* <!--Texto e imagen--> */
+.baño {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.imgbaño {
+  padding: 10px;
+  border-top: 20%;
+  max-width: 100%;
+  @include sizes(500px, 400px);
+}
+.asesorias {
+  background-image: linear-gradient(to left, white, rgb(248, 203, 210));
+  border-radius: 10px;
+  justify-content: center;
+  padding: 70px;
+  font-size: 20px;
+}
