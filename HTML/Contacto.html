@@ -36,8 +36,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid menu justify-content-center">
-          <a class="navbar-brand"
-            ><img src="../Img/Logo2 (1).png" class="logo" />
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../Img/Logo2 (1).png" class="logo" alt="imagen logo"/>
           </a>
           <button
             class="navbar-toggler"
@@ -55,7 +55,7 @@
             <ul class="navbar-nav justify-content-center">
               <li class="nav-item menu">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="../index.html"
                   >Inicio</a
@@ -81,84 +81,86 @@
 
     <!--Formulario de contacto-->
     <main>
-      <div class="container contact">
-        <div class="row">
-          <div class="col-sm-2 col-md-3 col-lg-6">
-            <div class="mb-3">
-              <label for="exampleInputNombre" class="form-label"
-                >Nombre Completo</label
+      <form>
+        <div class="container contact">
+          <div class="row">
+            <div class="col-md-12 col-lg-5">
+              <div class="mb-3">
+                <label for="Nombre" class="form-label"
+                  >Nombre Completo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Nombre"
+                  aria-describedby="nombreHelp"
+                />
+                <div id="nombreHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label">E-mail</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                />
+              </div>
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
               >
-              <input
-                type="nombre"
-                class="form-control"
-                id="exampleInputNombre1"
-                aria-describedby="nombreHelp"
-              />
-              <div id="nombreHelp" class="form-text"></div>
+                <option selected>Modalidad</option>
+                <option value="1">Online</option>
+                <option value="2">Presencial</option>
+              </select>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="1ambiente"
+                />
+                <label class="form-check-label" for="1ambiente">
+                  1 Ambiente
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="2ambientes"
+                />
+                <label class="form-check-label" for="2ambientes">
+                  2 Ambientes
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="3ambientes"
+                />
+                <label class="form-check-label" for="3ambientes">
+                  3 Ambientes
+                </label>
+              </div>
+              <div class="mb-3 form-check mb-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Suscribirse al Newsletter</label
+                >
+              </div>
+              <button type="submit" class="btn btn-secondary">Enviar</button>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">E-mail</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-              />
-            </div>
-            <select
-              class="form-select mb-3"
-              aria-label="Default select example"
-            >
-              <option selected>Modalidad</option>
-              <option value="1">Online</option>
-              <option value="2">Presencial</option>
-            </select>
-            <div class="form-check mb-3">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="1ambiente"
-              />
-              <label class="form-check-label" for="1ambiente">
-                1 Ambiente
-              </label>
-            </div>
-            <div class="form-check mb-3">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="2ambientes"
-                checked
-              />
-              <label class="form-check-label" for="2ambientes">
-                2 Ambientes
-              </label>
-            </div>
-            <div class="form-check mb-3">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="3ambientes"
-                checked
-              />
-              <label class="form-check-label" for="3ambientes">
-                3 Ambientes
-              </label>
-            </div>
-            <div class="mb-3 form-check mb-3">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Suscribirse al Newsletter</label
-              >
-            </div>
-            <button type="submit" class="btn btn-secondary">Enviar</button>
-          </div>
+
+      </form>
+      
           <div class="col-sm-1 col-md-3 contacto">
             <p>
               ¡Completa el formulario de contacto y en un plazo de 48 hs nos
@@ -172,13 +174,10 @@
     <footer class="footer">
       <div>
         <div class="row justify-content-center col-sm-6 col-md-12">
-          <h6>
-            Copyright 2021 Design. Todos los derechos reservados.<img
-              class="img"
-              src="../Img/facebook.png"
-            />
-            <img class="img" src="../Img/instagram.png" />
-            <img class="img" src="../Img/placeholder-filled-point.png" />
+          <h6>Copyright 2021 Design. Todos los derechos reservados.
+            <a href="#"><img class="img" src="../Img/facebook.png" alt="boton facebook" /></a>
+            <a href="#"><img class="img" src="../Img/instagram.png" alt="boton instagram"/></a>
+            <a href="#"><img class="img" src="../Img/placeholder-filled-point.png" alt="boton mapa"/></h6></a>
           </h6>
         </div>
       </div>

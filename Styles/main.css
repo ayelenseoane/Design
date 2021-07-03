@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* <!--Main--> */
+/* <!--banner--> */
+.banner {
+  max-width: 100%;
+}
+
 /* <!--Titulo, imagen, parrafo--> */
 .titulo {
   text-align: center;
@@ -14,6 +19,8 @@
 .imghouses {
   padding: 10px;
   max-width: 100%;
+  -webkit-box-shadow: 10px 5px 5px grey;
+          box-shadow: 10px 5px 5px grey;
   height: 300px;
   width: 600px;
 }
@@ -61,11 +68,13 @@
           justify-content: center;
   max-width: 100%;
   margin-bottom: 20%;
+  -webkit-box-shadow: 10px 5px 5px;
+          box-shadow: 10px 5px 5px;
   height: 400px;
   width: 400px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .imagen {
     width: 300px;
     height: 300px;
@@ -75,7 +84,23 @@
   .imghouses {
     height: 200px;
     width: 300px;
+    margin-bottom: 5%;
     margin-left: 7%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .imghouses {
+    margin-left: 28%;
+    margin-right: 5%;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .diseños--houses {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
   }
 }
 
@@ -85,6 +110,8 @@
   background-color: #f8dce1;
   margin-top: 5%;
   padding: 10%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .titulo {
@@ -107,6 +134,8 @@
   padding: 10px;
   border-top: 20%;
   max-width: 100%;
+  -webkit-box-shadow: 10px 5px 5px grey;
+          box-shadow: 10px 5px 5px grey;
   height: 400px;
   width: 500px;
 }
@@ -120,6 +149,30 @@
           justify-content: center;
   padding: 70px;
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .imgbaño {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+  }
+  .asesorias {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .asesorias {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .imgbaño {
+    width: 100%;
+    margin-left: 40%;
+  }
 }
 
 /* <!--Main--> */
@@ -138,15 +191,33 @@
           align-items: center;
   padding: 70px;
   font-size: 20px;
-  margin-left: 10%;
+  margin-left: 20%;
   height: 300px;
   width: 400px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .contacto {
     margin-left: 1%;
-    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .contact {
+    width: 90%;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .contacto {
+    margin-left: 6%;
+    margin-right: 5%;
+    width: 80%;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .contact {
+    margin-left: 5%;
   }
 }
 
@@ -175,11 +246,13 @@
   max-width: 100%;
   margin-top: 5%;
   margin-bottom: 10%;
+  -webkit-box-shadow: 10px 5px 5px;
+          box-shadow: 10px 5px 5px;
   height: 400px;
   width: 400px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .imagenes {
     width: 300px;
     height: 300px;
@@ -209,6 +282,8 @@
   padding: 10px;
   border-top: 20%;
   max-width: 100%;
+  -webkit-box-shadow: 10px 5px 5px grey;
+          box-shadow: 10px 5px 5px grey;
   height: 300px;
   width: 400px;
 }
@@ -224,12 +299,28 @@
   font-size: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .imgnosotros {
-    width: 300px;
-    height: 300px;
-    margin-top: 4%;
-    margin-left: 5%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 7%;
+    width: 90%;
+  }
+  .Nosotros {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .imgnosotros {
+    margin-left: 35%;
+    margin-right: 5%;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .Nosotros {
+    width: 100%;
   }
 }
 
@@ -276,7 +367,7 @@ body {
   margin: 10px;
 }
 
-.img a:hover {
-  color: pink;
+.footer a:hover {
+  background-color: #e0dcdc;
 }
 /*# sourceMappingURL=main.css.map */

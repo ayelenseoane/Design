@@ -16,6 +16,7 @@
   padding: 10px;
   border-top: 20%;
   max-width: 100%;
+  box-shadow: 10px 5px 5px grey;
   @include sizes(400px, 300px);
 }
 .Nosotros {
@@ -25,11 +26,26 @@
   padding: 70px;
   font-size: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .imgnosotros {
-    width: 300px;
-    height: 300px;
-    margin-top: 4%;
-    margin-left: 5%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 7%;
+    width: 90%;
+  }
+  .Nosotros {
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .imgnosotros {
+    margin-left: 35%;
+    margin-right: 5%;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .Nosotros {
+    width: 100%;
   }
 }
